@@ -1,7 +1,0 @@
-sleepers = [{
-      "name" : "Liz",
-	  "sex" : "F",
-	  "weight" : "105",
-	  "Alarm" : "0700",
-	  "id": 1
-   }]

@@ -1,0 +1,51 @@
+{
+	"sleeper1": {
+		"name" : "Liz",
+		"sex" : "F",
+		"weight" : "105",
+		"Alarm" : "0700",
+		"id": "1"
+	},
+	"sleeper2": {
+		"name" : "Andrew",
+		"sex" : "M",
+		"weight" : "155",
+		"Alarm" : "0530",
+		"id": "2"
+	},
+	"sleeper3": {
+		"name" : "Sandy",
+		"sex" : "F",
+		"weight" : "110",
+		"Alarm" : "0700",
+		"id": "3"
+	},
+	"sleeper4": {
+		"name" : "Joseph",
+		"sex" : "M",
+		"weight" : "200",
+		"Alarm" : "0530",
+		"id": "4"
+	},
+	"sleeper5": {
+		"name" : "Danielle",
+		"sex" : "F",
+		"weight" : "98",
+		"Alarm" : "0545",
+		"id": "5"
+	},
+	"sleeper6": {
+		"name" : "Matthew",
+		"sex" : "M",
+		"weight" : "160",
+		"Alarm" : "0815",
+		"id": "6"
+	},
+	"sleeper7": {
+		"name" : "John",
+		"sex" : "M",
+		"weight" : "215",
+		"Alarm" : "0900",
+		"id": "7"
+	}
+}
