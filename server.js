@@ -12,11 +12,8 @@ app.get('/index.html', function (req, res) {
 });
 
 app.get('/fullUsers.html', function (req, res) {
-	fs.readFile(__dirname + "/" + "sleepers.json", 'utf8', function(err, data){
-	  console.log( data );
-	  res.end( data );
-	});
-})
+  res.sendFile(__dirname + "/" + "fullUsers.html");
+});
 
 app.get('/specificUser.html', function (req, res) {
   res.sendFile(__dirname + "/" + "specificUser.html");

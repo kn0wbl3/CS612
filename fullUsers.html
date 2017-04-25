@@ -76,12 +76,31 @@
 			</nav>
 
             <article>
-						
-						<button type="button" onclick="listSleepers()">Click to See All Users</button>
-						<script src="sleepers.json"></script>
-						<script src="server.js"></script>
-						
-						<p id="demo">Output</p>
+				<script>
+				$(function() {
+					var people = [];
+					$.getJSON('sleepers.json', function(data) {
+						$.each(data.sleepers, function(i, f) {
+							var tblRow = "<tr>" + "<td>" + f.name + "</td>" +
+							"<td>" + f.sex + "</td>" + "<td>" + f.weight + "</td>" + "<td>" + f.alarm + "</td>" + "</tr>"
+							$(tblRow).appendTo("#userdata tbody");
+						});
+
+					});
+
+				});
+				</script>
+				<table id= "userdata" border="2">
+					<thead>
+						<th>Name</th>
+						<th>Sex</th>
+						<th>Weight</th>
+						<th>Alarm</th>
+					</thead>
+					<tbody>
+
+					</tbody>
+				</table>
             </article>
 
 		</div>
