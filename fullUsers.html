@@ -7,24 +7,11 @@
                     	width: 100%;
                     	border: 1px solid gray;
                 }
-                
-            div.leftCol
-            	{
-                	float: left;
-                    	width: 50%
-                }
-                
-            div.rightCol
-            	{
-                	float: right;
-                    	width: 50%
-                }
 
             header, footer 
                 {
                     	padding: 1em;
                     	color: black;
-			background-image: url("mountain.gif");
                     	clear: left;
                     	text-align: center;
                 }
@@ -53,9 +40,25 @@
                     	margin-left: 170px;
                     	border-left: 1px solid gray;
                     	padding: 1em;
-                    	overflow: hidden;
                 }
+			table {
+				font-family: arial, sans-serif;
+				border-collapse: collapse;
+				width: 100%;
+			}
+
+			td, th {
+				border: 1px solid #dddddd;
+				text-align: center;
+				padding: 8px;
+			}
+
+			tr:nth-child(even) {
+				background-color: #dddddd;
+			}
 		</style>
+		<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="/usr/src/app/listUsers.js"></script> -->
 	</head>
     
 	<body>
@@ -63,45 +66,22 @@
 		<div class="container">
 
 			<header>
+			
   				<h1>Full List of Users</h1>
 				
 			</header>
   
 			<nav>
   				<ul>
-                    <li><a href="index.html#Home">Home</a></li>
-                    <li><a href="fullUsers.html#Full">Full List of Users</a></li>
-                    <li><a href="specificUser.html#Specific">User by ID</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fullUsers.html">Full List of Users</a></li>
+                    <li><a href="specificUser.html">User by ID</a></li>
   				</ul>
 			</nav>
 
             <article>
-				<script>
-				$(function() {
-					var people = [];
-					$.getJSON('sleepers.json', function(data) {
-						$.each(data.sleepers, function(i, f) {
-							var tblRow = "<tr>" + "<td>" + f.name + "</td>" +
-							"<td>" + f.sex + "</td>" + "<td>" + f.weight + "</td>" + "<td>" + f.alarm + "</td>" + "</tr>"
-							$(tblRow).appendTo("#userdata tbody");
-						});
-
-					});
-
-				});
-				</script>
-				<table id= "userdata" border="2">
-					<thead>
-						<th>Name</th>
-						<th>Sex</th>
-						<th>Weight</th>
-						<th>Alarm</th>
-					</thead>
-					<tbody>
-
-					</tbody>
-				</table>
-            </article>
+				<!-- <button type="button" onclick="listUsers()">List Users</button> -->
+			</article>
 
 		</div>
 
