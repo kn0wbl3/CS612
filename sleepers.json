@@ -1,20 +1,50 @@
 {
    "user1" : {
-      "name" : "mahesh",
-	  "password" : "password1",
-	  "profession" : "teacher",
+      "name" : "Liz",
+	  "sex" : "F",
+	  "weight" : "105",
 	  "id": 1
    },
    "user2" : {
-      "name" : "suresh",
-	  "password" : "password2",
-	  "profession" : "librarian",
+      "name" : "Andrew",
+	  "sex" : "M",
+	  "weight" : "165",
 	  "id": 2
    },
    "user3" : {
-      "name" : "ramesh",
-	  "password" : "password3",
-	  "profession" : "clerk",
+      "name" : "Joe",
+	  "sex" : "M",
+	  "weight" : "193",
 	  "id": 3
+   },
+   "user4" : {
+      "name" : "Len",
+	  "sex" : "F",
+	  "weight" : "110",
+	  "id": 4
+   },
+   "user5" : {
+      "name" : "Matt",
+	  "sex" : "M",
+	  "weight" : "193",
+	  "id": 5
+   },
+   "user6" : {
+      "name" : "Leslie",
+	  "sex" : "F",
+	  "weight" : "107",
+	  "id": 6
+   },
+   "user7" : {
+      "name" : "Sandra",
+	  "sex" : "F",
+	  "weight" : "106",
+	  "id": 7
+   },
+   "user8" : {
+      "name" : "Mike",
+	  "sex" : "M",
+	  "weight" : "190",
+	  "id": 8
    }
 }

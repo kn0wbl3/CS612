@@ -69,16 +69,16 @@
 			<nav>
   				<ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="fullUsers.html">Full List of Users</a></li>
+                    <li><a href="fullUsers.html" target="_blank">Full List of Users</a></li>
                     <li><a href="specificUser.html">User by ID</a></li>
   				</ul>
 			</nav>
 
             <article>
                 	<div class="leftCol">
-            			<form>
+            			<form id="your_form" target="_blank" onsubmit="details()">
 	  				ID Number:<br>
-	  				<input type="text" name="id">
+	  				<input type="number" name="id">
 	  				<br>
 					<br><br>
 	  				<input type="submit" value="Submit">
@@ -87,7 +87,13 @@
             </article>
 
 		</div>
-
+		<script>
+		function details(){
+			var action_src = "/userDetails.html/" + document.getElementsByName("id")[0].value;
+			var your_form = document.getElementById('your_form');
+			your_form.action = action_src ;
+		}
+		</script>
 	</body>
 </html>
 

@@ -21,7 +21,7 @@ app.get('/specificUser.html', function (req, res) {
   res.sendFile(__dirname + "/" + "specificUser.html");
 });
 
-app.get('/specificUser.html/:id', function (req, res) {
+app.get('/userDetails.html/:id', function (req, res) {
 	// First read existing users.
 	fs.readFile( __dirname + "/" + "sleepers.json", 'utf8', function (err, data) {
        users = JSON.parse( data );
